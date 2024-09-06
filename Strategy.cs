@@ -8,12 +8,12 @@ public enum StateIdentifier
     StateA,
     StateB
 }
+
 public abstract class StateStrategy
 {
     public abstract void Execute();
-
-
 }
+
 public class StateStrategyA : StateStrategy
 {
     public static readonly StateIdentifier Identifier = StateIdentifier.StateA;
